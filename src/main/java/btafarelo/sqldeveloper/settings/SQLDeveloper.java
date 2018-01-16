@@ -15,6 +15,10 @@ public class SQLDeveloper {
 		sqlDevDir = new File(System.getProperty("user.home") + "/.sqldeveloper");
 	}
 	
+	public SQLDeveloper(String sqlDeveloperPath) {
+		sqlDevDir = new File(sqlDeveloperPath);
+	}
+	
 	public List<InstallationVO> listInstallations() {
 		List<InstallationVO> result = new ArrayList<InstallationVO>();
 		

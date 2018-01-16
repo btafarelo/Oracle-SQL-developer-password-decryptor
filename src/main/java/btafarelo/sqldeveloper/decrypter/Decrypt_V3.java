@@ -1,3 +1,5 @@
+package btafarelo.sqldeveloper.decrypter;
+
 //
 //      Based upon https://gist.github.com/ajokela/1846191
 //

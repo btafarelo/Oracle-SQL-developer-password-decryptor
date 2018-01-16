@@ -1,16 +1,13 @@
-// vi: ft=java
+package btafarelo.sqldeveloper.decrypter;
 
-import java.security.MessageDigest;
 import java.security.GeneralSecurityException;
+//     Requires Java 8:
+import java.util.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-
 import javax.xml.bind.DatatypeConverter;
-
-//     Requires Java 8:
-import java.util.Base64;
 
 
 public class Decrypt_V4 {
@@ -28,7 +25,7 @@ public class Decrypt_V4 {
 
   }
 
-  private static byte[] decrypt_v4(
+  public static byte[] decrypt_v4(
       byte[] encrypted,
       byte[] db_system_id)
   throws GeneralSecurityException

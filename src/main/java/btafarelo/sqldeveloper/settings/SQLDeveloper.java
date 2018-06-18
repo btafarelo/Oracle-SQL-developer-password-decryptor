@@ -36,9 +36,9 @@ public class SQLDeveloper {
 			
 			installation.setVersion(f.getName());
 			
-			installation.setConnection(getFile("o.jdeveloper.db.connection[0-9\\.]+", "connections.xml"));
+			installation.setConnection(getFile("o.jdeveloper.db.connection[0-9\\.]*", "connections.xml"));
 			
-			installation.setProductPreference(getFile("o.sqldeveloper[0-9\\.]+", "product-preferences.xml"));
+			installation.setProductPreference(getFile("o.sqldeveloper[0-9\\.]*", "product-preferences.xml"));
 			
 			result.add(installation);
 		}
